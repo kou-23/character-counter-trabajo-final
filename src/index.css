@@ -39,3 +39,49 @@ main {
 p, label, span {
   color: var(--text-secundario);
 }
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 40px; 
+}
+
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-container h1 {
+  font-size: 20px; 
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.logo {
+  width: 32px; 
+  height: auto;
+}
+
+header button {
+  background-color: var(--bg-principal); 
+  border: 1px solid #333442; 
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-secundario);
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+
+header button:hover {
+  background-color: #2a2b36; 
+  color: var(--text-principal);
+}
