@@ -1,8 +1,10 @@
 const ProgressBar = ({ letter }) => {
   return (
-    <li key={letter.letterName}>
+    <li>
       <span>{letter.letterName.toUpperCase()}</span>
-      <meter min="0" max="100" value={letter.percentage}></meter>
+      <div className="progress-container">
+        <div className="progress-fill" style={{ width: `${letter.percentage}%` }}></div>
+      </div>
       <span>{letter.amount} ({letter.percentage.toFixed(1)}%)</span>
     </li>
   )

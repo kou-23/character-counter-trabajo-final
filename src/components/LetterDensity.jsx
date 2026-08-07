@@ -2,7 +2,7 @@ import { ProgressBar } from "./ProgressBar"
 
 const LetterDensity = ({ sortLetters }) => {
   return (
-    <section>
+    <section className="grupo-progress">
       <h2>Cantidad de letras</h2>
       <article>
         <ul>
