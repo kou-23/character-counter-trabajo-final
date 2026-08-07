@@ -143,7 +143,7 @@ outline: none;
   margin-left: 15px;
 }
 
-.controles-texto div input {
+.controles-texto div input[type="checkbox"] {
   appearance: none;
   width: 15px;
   height: 15px;
@@ -151,6 +151,20 @@ outline: none;
   border-radius: 4px;
   color: var(--text-principal);
   cursor: pointer;
+}
+
+.input-limit {
+  width: 60px;
+  height: 28px;
+  background-color: var(--bg-cards);
+  border: 1px solid #48444d;
+  border-radius: 6px;
+  padding: 2px 4px;
+  color: var(--text-principal);
+  font-family: var(--font-text);
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .controles-texto div input:checked {
@@ -298,3 +312,48 @@ summary {
 summary:hover {
   color: var(--progress-bar);
 }
+
+
+/*Media query*/
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  body {
+    align-items: flex-start;
+  }
+
+  main h2 {
+    font-size: 38px;
+    margin: 20px 0 15px 0;
+  }
+
+  .second-sect {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .card, .card2, .card3 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .controles-texto {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .grupo-checkboxes {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+

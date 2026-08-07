@@ -28,8 +28,10 @@ const Controlls = ({
           limitCharacter &&
           <input
             type="number"
+            min="1"
             value={limitValue}
             onChange={(e) => handleLimitValue(e.target.value)}
+            className="input-limit"
           />
         }
       </div>
