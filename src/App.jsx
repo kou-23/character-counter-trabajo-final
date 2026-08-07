@@ -84,7 +84,7 @@ const App = () => {
 
 
   return (
-    <main className={`${dark ? "dark-theme" : ""}`}>
+    <main className={`${dark ? "dark-theme" : "light-theme"}`}>
       <Header handleDarkTheme={handleDarkTheme} />
       <h2>Analiza el texto <br />
         en tiempo real.</h2>
